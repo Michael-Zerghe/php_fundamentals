@@ -7,17 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-<!--
+
 <form method="get" action="">
     <label for="gender">gender : </label></br>
     <input type="radio" name="gender" value="woman">woman</input></br>
     <input type="radio" name="gender" value="man">man</input></br>
+    <input type="submit" name="submit" value="Greet me now">
 </form>
--->
+
     <?php
+        $hello = 'hello';
+        if(isset($_GET['gender'])){ 
+            $gender ='hello '. $_GET['gender']; 
+          };
 
-        $hello = 'hello' + isset($_GET['gender']);
-
+          echo $gender;
     ?>
 
 
